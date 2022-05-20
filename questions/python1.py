@@ -125,7 +125,7 @@ def three(input):
 	# Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 
-def four(input):
+# def four(input):
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -172,8 +172,8 @@ def five(input):
 
 	# How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
  
-def six(string, int, char):
-	return False
+# def six(string, int, char):
+# 	return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -195,8 +195,8 @@ def six(string, int, char):
 
 	# Take a look at the documentation for Strings, List and range.
 
-def seven(inputString, char):
-	return -1
+# def seven(inputString, char):
+# 	return -1
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -222,8 +222,8 @@ def seven(inputString, char):
 
 	# help(int) for working with numbers and help(str) for working with Strings.
 
-def eight(arg1):
-	return 0
+# def eight(arg1):
+# 	return 0
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -250,7 +250,13 @@ def eight(arg1):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def nine(input):
-	return ""
+	input = input.lower()
+	bert='bert'
+	for char in 'xy':
+		input=input.replace(char,"")
+	if bert in input:
+		return input.replace(bert,"")
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
