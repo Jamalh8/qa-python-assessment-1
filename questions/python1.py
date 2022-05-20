@@ -125,10 +125,7 @@ def three(input):
 	# Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 
-# def four(input):
-# 	for i in range(input):
-		
-#     return False
+def four(input):
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
