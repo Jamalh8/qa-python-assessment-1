@@ -35,12 +35,6 @@
 
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
-from calendar import c
-from itertools import count
-
-import flask_sqlalchemy
-
-
 def one(input1, input2):
 	if len(input1)>len(input2):
 		return input1
@@ -185,9 +179,33 @@ def five(input):
 	# <HINT>
 
 	# How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
- 
+
+def six(string, int, char):
+	string = list(string.lower())
+	for i in range(0,len(string)):
+		string_len= string[i]
+		if string_len[int] == char:
+			return True
+	return False 
+# for i in range(0, len(string)):
+#         name = words[i]  # first argument is the name we want
+#         encr = words[i + 2]
+#         if encr == "False" and name not in result:
+#             result.append(name)
+#     return result
+
 # def six(string, int, char):
-# 	return False
+# 	string = list(string.lower())
+# 	index = 0
+# 	while index < len(string):
+# 			if index > len(string):
+# 				return False
+# 			elif string[int-1] == char:
+# 				return True
+# 			index += 1
+
+# 	return False 
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -311,8 +329,14 @@ def nine(input):
 	# help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def ten(input):
-
-	return []
+    result = []
+    words = input.split(",")
+    for n in range(0, len(words), 4):
+        person = words[n]
+        encr = words[n + 2]
+        if encr == "False" and person not in result:
+            result.append(person)
+    return result
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
