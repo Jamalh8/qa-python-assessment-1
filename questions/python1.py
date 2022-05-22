@@ -35,7 +35,10 @@
 
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
-from math import factorial
+from calendar import c
+from itertools import count
+
+import flask_sqlalchemy
 
 
 def one(input1, input2):
@@ -125,8 +128,19 @@ def three(input):
 	# Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 
-# def four(input):
-
+def four(input):
+	if "ei" in input:
+		if 'cei' in input:
+			return True
+	if 'ie' in input:
+		if 'cie' in input:
+			return False 
+	if 'ie' in input:
+		if 'c' not in input:
+			return True
+	else:
+		return False 
+		
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 5>
@@ -195,8 +209,13 @@ def five(input):
 
 	# Take a look at the documentation for Strings, List and range.
 
-# def seven(inputString, char):
-# 	return -1
+def seven(inputString, char):
+	inputString = inputString.replace(" ", "")
+	if char not in inputString:
+		return -1
+	return 1+inputString.index(char)
+
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -222,8 +241,14 @@ def five(input):
 
 	# help(int) for working with numbers and help(str) for working with Strings.
 
-# def eight(arg1):
-# 	return 0
+def eight(arg1):
+	arg1= arg1.split()
+	arg1_list= []
+	for i in arg1:
+		arg1_list.append(int(i))
+		return arg1_list
+
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -286,6 +311,7 @@ def nine(input):
 	# help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def ten(input):
+
 	return []
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
