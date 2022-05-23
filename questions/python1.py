@@ -181,31 +181,13 @@ def five(input):
 	# How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
 
 def six(string, int, char):
-	string = list(string.lower())
-	for i in range(0,len(string)):
-		string_len= string[i]
-		if string_len[int] == char:
-			return True
+	string = string.lower()
+	if int > len(string):
+		return False
+	if string[int-1] == char:
+		return True
 	return False 
-# for i in range(0, len(string)):
-#         name = words[i]  # first argument is the name we want
-#         encr = words[i + 2]
-#         if encr == "False" and name not in result:
-#             result.append(name)
-#     return result
-
-# def six(string, int, char):
-# 	string = list(string.lower())
-# 	index = 0
-# 	while index < len(string):
-# 			if index > len(string):
-# 				return False
-# 			elif string[int-1] == char:
-# 				return True
-# 			index += 1
-
-# 	return False 
-
+	
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -260,11 +242,6 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
-	arg1= arg1.split()
-	arg1_list= []
-	for i in arg1:
-		arg1_list.append(int(i))
-		return arg1_list
 
 
 
